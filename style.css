@@ -1,0 +1,303 @@
+/* Body*/
+
+.body{
+    background-image: url("img/fondo.png");
+    background-repeat: repeat;
+}
+
+/*Header*/
+
+.header{
+    background-color:#C13930;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 200px;
+    padding: 1rem;
+}
+
+.logoHeader{
+    height: 100%;
+    width: 100%;
+}
+
+/* NavBar*/
+.header__navbar ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header__navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: floralwhite;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/*Footer*/
+
+.footer{
+    background-color: #3B3444;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer a{
+    color: mintcream;
+    font-size: 1rem;
+}
+
+.footer p{
+    color: mintcream;
+    font-size: 1rem;
+}
+
+
+
+/* ANIMACIONES */
+
+a{
+    text-decoration: none;
+    background-image: linear-gradient(currentColor,currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a:hover, a:focus {
+    background-size: 100% 2px;
+}
+
+.imagenAsociacion{
+    width: 100%;
+}
+
+/* Secciones */
+
+/* Inicio*/
+
+#inicio{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#inicio h2{
+    background-color:#C13930;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.contenedorMapa{
+    border: solid 2px black;
+    margin-bottom: 4rem;
+}
+
+/* Historia*/
+
+.contenedor {
+    text-align:center;
+    margin: 50px;
+    padding: 30px;
+    border: solid 1px #99A799;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.contenedor h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Galeria Historia */
+
+.imagenGaleria {
+    width: 100%;
+    height: 250px;
+}
+
+.gridPadre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "imagenUno imagenDos imagenTres"
+        "imagenCuatro imagenCinco imagenSeis"
+    ;
+}
+
+.imagenUno {
+    grid-area: imagenUno;
+}
+
+.imagenDos {
+    grid-area: imagenDos;
+}
+
+.imagenTres {
+    grid-area: imagenTres;
+}
+
+.imagenCuatro {
+    grid-area: imagenCuatro;
+}
+
+.imagenCinco {
+    grid-area: imagenCinco;
+}
+
+.imagenSeis {
+    grid-area: imagenSeis;
+}
+
+#club1927 a{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+/*Contacto*/
+
+.form{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+
+/*VISTA MOVIL */
+
+@media only screen and (max-width:599px) {
+
+    .header{
+        background-color:#C13930;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items: center;
+        height: 150px;
+        padding: 1rem;
+    }
+    
+    .header__navbar a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: floralwhite;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .logoHeader{
+        max-height: 100px;
+        max-width: 100px;
+    }
+
+    .gridPadre {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas:
+            "imagenUno"
+            "imagenDos"
+            "imagenTres"
+            "imagenCuatro"
+            "imagenCinco"
+            "imagenSeis"
+        ;
+
+    }
+
+
+    .imagenUno {
+        grid-area: imagenUno;
+    }
+
+    .imagenDos {
+        grid-area: imagenDos;
+    }
+
+    .imagenTres {
+        grid-area: imagenTres;
+    }
+
+    .imagenCuatro {
+        grid-area: imagenCuatro;
+    }
+
+    .imagenCinco {
+        grid-area: imagenCinco;
+    }
+
+    .imagenSeis {
+        grid-area: imagenSeis;
+    }
+
+}
+
+/* VISTA TABLET */
+@media only screen and (min-width:600px) and (max-width:1023px) {
+    
+
+    .header{
+        background-color:#C13930;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items: center;
+        height: 200px;
+        padding: 1rem;
+    }
+
+    .header__navbar a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: floralwhite;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .logoHeader{
+        max-height: 150px;
+        max-width: 150px;
+    }
+
+    .gridPadre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "imagenUno imagenDos"
+            "imagenTres imagenCuatro"
+            "imagenCinco imagenSeis"
+        ;
+    }
+
+    .imagenUno {
+        grid-area: imagenUno;
+    }
+
+    .imagenDos {
+        grid-area: imagenDos;
+    }
+
+    .imagenTres {
+        grid-area: imagenTres;
+    }
+
+    .imagenCuatro {
+        grid-area: imagenCuatro;
+    }
+
+    .imagenCinco {
+        grid-area: imagenCinco;
+    }
+
+    .imagenSeis {
+        grid-area: imagenSeis;
+    }
+
+}
