@@ -19,6 +19,16 @@
 .logoHeader{
     max-height: 200px;
     max-width: 200px;
+    transform-style: preserve-3d;
+    animation: rotar 5s infinite linear;
+}
+
+
+@keyframes rotar {
+    from{ transform: rotateY(0deg);
+    }
+    to { transform: rotateY(360deg);
+    }
 }
 
 /* NavBar*/
