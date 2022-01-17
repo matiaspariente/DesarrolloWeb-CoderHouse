@@ -1,13 +1,13 @@
 /* Body*/
 
 .body{
-    background-image: url("img/fondo.png");
+    background-image: url("../img/fondo.png");
     background-repeat: repeat;
 }
 
 /*Header*/
 
-.header{
+.header__navbar{
     background-color:#C13930;
     display: flex;
     justify-content:space-between;
@@ -16,33 +16,20 @@
     padding: 1rem;
 }
 
-.logoHeader{
-    max-height: 200px;
-    max-width: 200px;
-    transform-style: preserve-3d;
-    animation: rotar 5s infinite linear;
-}
-
-
-@keyframes rotar {
-    from{ transform: rotateY(0deg);
-    }
-    to { transform: rotateY(360deg);
-    }
-}
-
 /* NavBar*/
-.header__navbar ul li{
-    display: inline-block;
-    margin-right: 20px;
-}
 
-.header__navbar a{
+#nav-link-a{
     text-decoration: none;
     text-transform: uppercase;
     color: floralwhite;
     font-weight: bold;
     font-size: 25px;
+}
+
+#nav-ul{
+    background-color:#C13930;
+    display: flex;
+    align-items: flex-end;
 }
 
 /*Footer*/
@@ -67,6 +54,20 @@
 
 
 /* ANIMACIONES */
+
+.logoHeader{
+    max-height: 200px;
+    max-width: 200px;
+    transform-style: preserve-3d;
+    animation: rotar 5s infinite linear;
+}
+
+@keyframes rotar {
+    from{ transform: rotateY(0deg);
+    }
+    to { transform: rotateY(360deg);
+    }
+}
 
 a{
     text-decoration: none;
@@ -179,21 +180,15 @@ a:hover, a:focus {
     padding: 5rem;
 }
 
-/*VISTA MOVIL */
+/*VISTA MOVIL*/ 
 
-@media only screen and (max-width:599px) {
+@media only screen and (max-width:320px) {
 
     .header{
-        background-color:#C13930;
-        display: flex;
-        flex-direction: column;
-        justify-content:flex-end;
-        align-items: center;
         height: 150px;
-        padding: 1rem;
     }
     
-    .header__navbar a{
+    #nav-link-a{
         text-decoration: none;
         text-transform: uppercase;
         color: floralwhite;
@@ -248,21 +243,15 @@ a:hover, a:focus {
 
 }
 
-/* VISTA TABLET */
-@media only screen and (min-width:600px) and (max-width:1023px) {
+/* VISTA TABLET*/ 
+@media only screen and (min-width:321px) and (max-width:768px) {
     
 
     .header{
-        background-color:#C13930;
-        display: flex;
-        flex-direction: column;
-        justify-content:flex-end;
-        align-items: center;
-        height: 200px;
-        padding: 1rem;
+        height: 180px;
     }
 
-    .header__navbar a{
+    #nav-link-a{
         text-decoration: none;
         text-transform: uppercase;
         color: floralwhite;
