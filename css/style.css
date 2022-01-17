@@ -166,9 +166,16 @@ a:hover, a:focus {
     grid-area: imagenSeis;
 }
 
+/*1927*/
+
 #club1927 a{
     font-size: 50px;
     text-transform: uppercase;
+}
+
+#club1927 iframe{
+    width: 476px;
+    height: 476px;
 }
 
 /*Contacto*/
@@ -201,11 +208,45 @@ a:hover, a:focus {
         max-width: 100px;
     }
 
+    #inicio h2{
+        background-color:#C13930;
+        color: white;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    
+    #mapaGoogle{
+        width: 280px;
+        height: 210px;
+    }
+
+
+    .contenedor h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+    }
+    
+    .contenedor p {
+        font-size: 0.6rem;
+    }
+
+    #club1927 a{
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    #club1927 iframe{
+        width: 150px;
+        height: 150px;
+    }
+
     .gridPadre {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto auto;
-        grid-template-areas:
+        grid-template-areas:fio
             "imagenUno"
             "imagenDos"
             "imagenTres"
@@ -262,6 +303,39 @@ a:hover, a:focus {
     .logoHeader{
         max-height: 150px;
         max-width: 150px;
+    }
+
+    #inicio h2{
+        background-color:#C13930;
+        color: white;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    #mapaGoogle{
+        width: 440px;
+        height: 330px;
+    }
+
+    .contenedor h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+    
+    .contenedor p {
+        font-size: 0.8rem;
+    }
+
+    #club1927 a{
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    #club1927 iframe{
+        width: 200px;
+        height: 200px;
     }
 
     .gridPadre {
