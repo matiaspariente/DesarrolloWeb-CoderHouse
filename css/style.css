@@ -27,9 +27,11 @@
 }
 
 #nav-ul{
-    background-color:#C13930;
     display: flex;
     align-items: flex-end;
+    background-color:#C13930;
+    position: relative;
+    z-index: 100;
 }
 
 /*Footer*/
@@ -230,8 +232,8 @@ a:hover, a:focus {
     }
     
     #mapaGoogle{
-        width: 280px;
-        height: 210px;
+        width: 240px;
+        height: 180px;
     }
 
 
@@ -333,8 +335,8 @@ a:hover, a:focus {
     }
 
     #mapaGoogle{
-        width: 440px;
-        height: 330px;
+        width: 320px;
+        height: 240px;
     }
 
     .contenedor h2 {
