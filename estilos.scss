@@ -1,5 +1,10 @@
 @import "menu";
 
+/* Variables*/
+
+$rojo-logo: #C13930;
+$azul-logo: #3B3444;
+
 /* Body*/
 
 .body{
@@ -11,7 +16,7 @@
 /*Footer*/
 
 .footer{
-    background-color: #3B3444;
+    background-color: $azul-logo;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -40,7 +45,7 @@
     align-items: center;
     flex-direction: column;
         h2{
-            background-color:#C13930;
+            background-color:$rojo-logo;
             color: white;
             font-size: 2rem;
              padding: 1rem;
@@ -114,13 +119,13 @@
 /*Actividades*/
 
 .carousel-item p{
-    background-color: #C13930;
+    background-color: $rojo-logo;
     color: floralwhite;
     text-transform: uppercase;
 }
 
 .carousel-item h5{
-    background-color: #C13930;
+    background-color: $rojo-logo;
     color: floralwhite;
     text-transform: uppercase;
 }
@@ -170,7 +175,7 @@
     }
 
     #inicio h2{
-        background-color:#C13930;
+        background-color:$rojo-logo;
         color: white;
         font-size: 1rem;
         padding: 1rem;
@@ -275,7 +280,7 @@
     }
 
     #inicio h2{
-        background-color:#C13930;
+        background-color: $rojo-logo;
         color: white;
         font-size: 1.5rem;
         padding: 1rem;
@@ -298,7 +303,7 @@
     }
     
     .carousel-item h5{
-        background-color: #C13930;
+        background-color: $rojo-logo;
         color: floralwhite;
         text-transform: uppercase;
         font-size: 0.8rem;

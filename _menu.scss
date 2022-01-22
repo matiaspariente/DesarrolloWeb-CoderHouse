@@ -1,7 +1,11 @@
+/* Variables*/
+
+$rojo-logo: #C13930;
+
 /*Header*/
 
 .header__navbar{
-    background-color:#C13930;
+    background-color:$rojo-logo;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -22,7 +26,7 @@
 #nav-ul{
     display: flex;
     align-items: flex-end;
-    background-color:#C13930;
+    background-color: $rojo-logo;
     position: relative;
     z-index: 100;
 }

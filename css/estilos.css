@@ -1,3 +1,4 @@
+/* Variables*/
 /*Header*/
 .header__navbar {
   background-color: #C13930;
@@ -86,6 +87,7 @@ a:focus {
   background-size: 100% 2px;
 }
 
+/* Variables*/
 /* Body*/
 .body {
   background-image: url("../img/fondo.png");
