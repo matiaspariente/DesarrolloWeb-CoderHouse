@@ -1,3 +1,5 @@
+@import "menu";
+
 /* Body*/
 
 .body{
@@ -5,34 +7,6 @@
     background-repeat: repeat;
 }
 
-/*Header*/
-
-.header__navbar{
-    background-color:#C13930;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    height: 200px;
-    padding: 1rem;
-}
-
-/* NavBar*/
-
-#nav-link-a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: floralwhite;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-#nav-ul{
-    display: flex;
-    align-items: flex-end;
-    background-color:#C13930;
-    position: relative;
-    z-index: 100;
-}
 
 /*Footer*/
 
@@ -41,47 +15,16 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-}
 
-.footer a{
+    a{
     color: mintcream;
     font-size: 1rem;
-}
+    }
 
-.footer p{
+    p{
     color: mintcream;
     font-size: 1rem;
-}
-
-
-
-/* ANIMACIONES */
-
-.logoHeader{
-    max-height: 200px;
-    max-width: 200px;
-    transform-style: preserve-3d;
-    animation: rotar 5s infinite linear;
-}
-
-@keyframes rotar {
-    from{ transform: rotateY(0deg);
     }
-    to { transform: rotateY(360deg);
-    }
-}
-
-a{
-    text-decoration: none;
-    background-image: linear-gradient(currentColor,currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-}
-
-a:hover, a:focus {
-    background-size: 100% 2px;
 }
 
 .imagenAsociacion{
@@ -96,13 +39,13 @@ a:hover, a:focus {
     display:flex;
     align-items: center;
     flex-direction: column;
-}
+        h2{
+            background-color:#C13930;
+            color: white;
+            font-size: 2rem;
+             padding: 1rem;
+        }
 
-#inicio h2{
-    background-color:#C13930;
-    color: white;
-    font-size: 2rem;
-    padding: 1rem;
 }
 
 .contenedorMapa{
@@ -119,12 +62,12 @@ a:hover, a:focus {
     border: solid 1px #99A799;
     border-radius: 4px;
     background-color: white;
-}
 
-.contenedor h2 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
+        h2 {
+            margin-top: 15px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        }
 }
 
 /* Galeria Historia */
@@ -184,14 +127,16 @@ a:hover, a:focus {
 
 /*1927*/
 
-#club1927 a{
-    font-size: 50px;
-    text-transform: uppercase;
-}
+#club1927 {
+            a{
+                font-size: 50px;
+                text-transform: uppercase;
+            }
 
-#club1927 iframe{
-    width: 476px;
-    height: 476px;
+            iframe{
+                width: 476px;
+                height: 476px;
+            }
 }
 
 /*Contacto*/
@@ -255,14 +200,16 @@ a:hover, a:focus {
         font-size: 0.5rem;
     }
 
-    #club1927 a{
-        font-size: 20px;
-        text-transform: uppercase;
-    }
+    #club1927 {
+        a{
+            font-size: 20px;
+            text-transform: uppercase;
+        }
 
-    #club1927 iframe{
-        width: 150px;
-        height: 150px;
+        iframe{
+            width: 150px;
+            height: 150px;
+        }
     }
 
     .gridPadre {
@@ -357,14 +304,16 @@ a:hover, a:focus {
         font-size: 0.8rem;
     }
 
-    #club1927 a{
-        font-size: 30px;
-        text-transform: uppercase;
-    }
+    #club1927 {
+        a{
+            font-size: 30px;
+            text-transform: uppercase;
+        }
 
-    #club1927 iframe{
-        width: 200px;
-        height: 200px;
+        iframe{
+            width: 200px;
+            height: 200px;
+        }
     }
 
     .gridPadre {
@@ -403,3 +352,5 @@ a:hover, a:focus {
     }
 
 }
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";

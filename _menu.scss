@@ -1,0 +1,59 @@
+/*Header*/
+
+.header__navbar{
+    background-color:#C13930;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 200px;
+    padding: 1rem;
+}
+
+/* NavBar*/
+
+#nav-link-a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: floralwhite;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#nav-ul{
+    display: flex;
+    align-items: flex-end;
+    background-color:#C13930;
+    position: relative;
+    z-index: 100;
+}
+
+/* ANIMACIONES */
+
+.logoHeader{
+    max-height: 200px;
+    max-width: 200px;
+    transform-style: preserve-3d;
+    animation: rotar 5s infinite linear;
+}
+
+@keyframes rotar {
+    from{ transform: rotateY(0deg);
+    }
+    to { transform: rotateY(360deg);
+    }
+}
+
+a{
+    text-decoration: none;
+    background-image: linear-gradient(currentColor,currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+        &:hover{
+            background-size: 100% 2px;
+        }
+        &:focus{
+            background-size: 100% 2px;
+        }
+}
