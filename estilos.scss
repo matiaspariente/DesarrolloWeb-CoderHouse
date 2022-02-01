@@ -1,9 +1,6 @@
+@import "variables";
 @import "menu";
 
-/* Variables*/
-
-$rojo-logo: #C13930;
-$azul-logo: #3B3444;
 
 /* Body*/
 
@@ -15,11 +12,17 @@ $azul-logo: #3B3444;
 
 /*Footer*/
 
+/*mixin*/
+
+@mixin parametrosFlex($display,$direccion,$alineacion){
+    display: $display;
+    flex-direction: $direccion;
+    align-items: $alineacion;
+}
+
 .footer{
     background-color: $azul-logo;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+    @include parametrosFlex(flex,column,center);
 
     a{
     color: mintcream;
@@ -40,17 +43,29 @@ $azul-logo: #3B3444;
 
 /* Inicio*/
 
+/* Map Get */
+
+$estiloInicio:(
+    color: white,
+    tamanioFuente: 3 rem,
+    padding: 1 rem,
+    colorFondo: $rojo-logo,
+);
+
 #inicio{
-    display:flex;
-    align-items: center;
-    flex-direction: column;
+    @include parametrosFlex(flex,column,center);
         h2{
-            background-color:$rojo-logo;
-            color: white;
-            font-size: 2rem;
-             padding: 1rem;
+            background-color: map-get($estiloInicio, colorFondo);
+            color: map-get($estiloInicio, color);
+            font-size: map-get($estiloInicio, tamanioFuente);
+            padding: map-get($estiloInicio, padding);
         }
 
+}
+
+.contenedorImagen{
+    width: 100%;
+    height: 100%;
 }
 
 .contenedorMapa{
@@ -60,8 +75,15 @@ $azul-logo: #3B3444;
 
 /* Historia*/
 
+/* Mixin sin parametros */
+
+@mixin textoHistoria{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .contenedor {
-    text-align:center;
+    @include textoHistoria;
     margin: 50px;
     padding: 30px;
     border: solid 1px #99A799;
@@ -70,9 +92,20 @@ $azul-logo: #3B3444;
 
         h2 {
             margin-top: 15px;
-        margin-bottom: 15px;
-        text-transform: uppercase;
+            margin-bottom: 15px;
+            text-transform: uppercase;
         }
+}
+
+/* Extend */
+
+.contenedorGaleria {
+     @extend .contenedor;
+     background-color: $azul-logo;
+        h2 {
+            color: $rojo-logo;
+        }
+
 }
 
 /* Galeria Historia */
