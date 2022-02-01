@@ -94,8 +94,8 @@ a:focus {
   background-repeat: repeat;
 }
 
-/*Footer*/
 /*mixin*/
+/*Footer*/
 .footer {
   background-color: #3B3444;
   display: -webkit-box;

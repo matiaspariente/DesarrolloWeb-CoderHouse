@@ -9,9 +9,6 @@
     background-repeat: repeat;
 }
 
-
-/*Footer*/
-
 /*mixin*/
 
 @mixin parametrosFlex($display,$direccion,$alineacion){
@@ -19,6 +16,10 @@
     flex-direction: $direccion;
     align-items: $alineacion;
 }
+
+/*Footer*/
+
+
 
 .footer{
     background-color: $azul-logo;
